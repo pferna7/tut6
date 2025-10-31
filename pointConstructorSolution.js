@@ -4,6 +4,7 @@ let PointPrototype = {
     // make a property x and a property y
     // that contain default values of 0 
 
+    // create the attributes for the class
     x: 0,
     y: 0,
 
@@ -15,7 +16,7 @@ let PointPrototype = {
     with [x] and [y] replaced with the appropriate way of
     accessing the values.
     */
-    print: function() {
+    print: function() {  // print function
         // Use the format specified above
         console.log("(" + this.x + ", " + this.y + ")");
     }

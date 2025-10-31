@@ -1,35 +1,36 @@
 function Point(x, y) {
     //paste definition from task 1
 
-    this.x = x;
+    // definitions from task 1
+    this.x = x;  // x and y attributes
     this.y = y;
 
-    this.print = function() {
+    this.print = function() {  // print function
         // Use the format specified above
-        console.log("(" + this.x + ", " + this.y + ")");
+        console.log("(" + this.x + ", " + this.y + ")");  // prints the x and the x attributes from the object
     }
 
 
 
 
-    this.midpoint = function(p2){
+    this.midpoint = function(p2){  // finds the midpoint
         //fill in as specified in README
         //don't forget to return the point
 
         let midX = (this.x + p2.x) / 2; // calculate mid point of x
         let midY = (this.y + p2.y) / 2; // calculate mid point of y
 
-        return new Point(midX, midY);  // return object
+        return new Point(midX, midY);  // return object with midpoints
     }
 
-    this.scaleTo = function(p2,t){
+    this.scaleTo = function(p2,t){  // scale and return object
         //fill in as specified in README
         //don't forget to return the point
 
         let scaledX = this.x + (p2.x - this.x) * t; // calculate scaled of x
         let scaledY = this.y + (p2.y - this.y) * t; // calculate scaled of y
 
-        return new Point(scaledX, scaledY);  // return object
+        return new Point(scaledX, scaledY);  // return scaled object
 
     }
 }
