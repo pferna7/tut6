@@ -1,10 +1,10 @@
 function Point(x, y) {
     //paste definition from task 1
 
-    this.x = y;
+    this.x = x;
     this.y = y;
 
-    print: function() {
+    this.print = function() {
         // Use the format specified above
         console.log("(" + this.x + ", " + this.y + ")");
     }
